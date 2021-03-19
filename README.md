@@ -46,7 +46,7 @@
 	（2）provider配置：
 		AndroidManifest中添加name为"com.ad.ad_manager.ADProvider"的provider（如下）
 		
-			<provider
+		<provider
            	 	android:name="com.ad.ad_manager.ADProvider"
           	 	android:authorities="${applicationId}.ADProvider"
            		android:exported="false"
@@ -54,7 +54,7 @@
            	 		<meta-data
               				android:name="android.support.FILE_PROVIDER_PATHS"
                				android:resource="@xml/file_paths" />
-     		</provider>
+     	</provider>
 		
 		xml中添加file_paths文件（如已存在resource配置，可比对内容添加项）
 	
