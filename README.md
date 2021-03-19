@@ -1,16 +1,16 @@
 # DFTui_DFSdk使用说明：（可参考demo项目）
 ## 1. 基本接口：
 * ***接口初始化，初始化后才可正常使用其他接口**
-`AD_Manager.init(Application application);`
+`DFTui.init(Application application);`
 	
 * **请求Splash广告（入参均不可为空）**
-`AD_Manager.get().getSplashAD（Activity activity,SplashCallAdShow callBack）`
+`DFTui.get().getSplashAD（Activity activity,SplashCallAdShow callBack）`
 	  
 * **请求信息流广告（入参均不可为空）**
-`AD_Manager.get().getPopAD（Activity activity,PopCallAdShow callBack）`
+`DFTui.get().getPopAD（Activity activity,PopCallAdShow callBack）`
 	
 * **请求激励视屏广告（入参均不可为空)**
-`AD_Manager.get().getVideoAD（Activity activity,VideoCallAdShow callBack）`
+`DFTui.get().getVideoAD（Activity activity,VideoCallAdShow callBack）`
 	 
 
 ## 2.基本回调：(SplashCallAdShow/PopCallAdShow/VideoCallAdShow)
@@ -48,10 +48,10 @@
 `implementation 'com.dftui.dfsdk:dfsdk:1.0.0'//（目前版本1.0.0）`
 	
 ### （2）provider配置：
-**AndroidManifest中添加name为"com.ad.ad_manager.ADProvider"的provider（如下）**
+**AndroidManifest中添加name为"com.dftui.dfsdk.ADProvider"的provider（如下）**
 
     <provider
-          android:name="com.ad.ad_manager.ADProvider"
+          android:name="com.dftui.dfsdk.ADProvider"
           android:authorities="${applicationId}.ADProvider
           android:exported="false"
           android:grantUriPermissions="true">
