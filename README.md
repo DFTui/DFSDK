@@ -1,4 +1,4 @@
-# AD_ManagerSDK使用说明：（可参考demo项目）
+# DFTui_DFSdk使用说明：（可参考demo项目）
 ## 1. 基本接口：
 * ***接口初始化，初始化后才可正常使用其他接口**
 `AD_Manager.init(Application application);`
@@ -41,11 +41,11 @@
 
 > **项目gradle->repositories添加:**
 
-`maven { url "https://raw.githubusercontent.com/nothingzang/ad_manager/main" }`
+`maven { url "https://raw.githubusercontent.com/DFTui/DFSDK/main" }`
 
 > **app的gradle->dependencies添加:**
 
-`implementation 'com.ad.ad_manager:adManager:1.0.0.3'//（目前版本1.0.0.3）`
+`implementation 'com.dftui.dfsdk:dfsdk:1.0.0'//（目前版本1.0.0）`
 	
 ### （2）provider配置：
 **AndroidManifest中添加name为"com.ad.ad_manager.ADProvider"的provider（如下）**
