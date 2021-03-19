@@ -3,12 +3,13 @@
   <groupId>com.ad.ad_manager</groupId>
   <artifactId>adManager</artifactId>
   <versioning>
-    <release>1.0.0.1</release>
+    <release>1.0.1</release>
     <versions>
       <version>1.0.0</version>
       <version>1.0.0.0</version>
       <version>1.0.0.1</version>
+      <version>1.0.1</version>
     </versions>
-    <lastUpdated>20210318104048</lastUpdated>
+    <lastUpdated>20210319013524</lastUpdated>
   </versioning>
 </metadata>
