@@ -45,7 +45,7 @@
 
 > **app的gradle->dependencies添加:**
 
-`implementation 'com.ad.ad_manager:adManager:1.0.0.3'//（目前版本1.0.0.3）`
+`implementation 'com.dftui.dfsdk:dfsdk:1.0.0'//（目前版本1.0.0）`
 	
 ### （2）provider配置：
 **AndroidManifest中添加name为"com.ad.ad_manager.ADProvider"的provider（如下）**
