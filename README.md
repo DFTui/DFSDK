@@ -41,7 +41,7 @@
 
 > **项目gradle->repositories添加:**
 
-`maven { url "https://raw.githubusercontent.com/nothingzang/ad_manager/main" }`
+`maven { url "https://raw.githubusercontent.com/DFTui/DFSDK/main" }`
 
 > **app的gradle->dependencies添加:**
 
