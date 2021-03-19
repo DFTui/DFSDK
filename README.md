@@ -1,49 +1,38 @@
 # AD_ManagerSDK使用说明：（可参考demo项目）
 ## 1. 基本接口：
 * ***接口初始化，初始化后才可正常使用其他接口**
-
 `AD_Manager.init(Application application);`
 	
 * **请求Splash广告（入参均不可为空）**
-
 `AD_Manager.get().getSplashAD（Activity activity,SplashCallAdShow callBack）`
 	  
 * **请求信息流广告（入参均不可为空）**
-
 `AD_Manager.get().getPopAD（Activity activity,PopCallAdShow callBack）`
 	
 * **请求激励视屏广告（入参均不可为空)**
-
 `AD_Manager.get().getVideoAD（Activity activity,VideoCallAdShow callBack）`
 	 
 
 ## 2.基本回调：(SplashCallAdShow/PopCallAdShow/VideoCallAdShow)
 * **开始请求**
-
 `void onAdStartRequest( long startTime, AD_Type adType);`
 	
 * **请求失败**
-
 `void onAdFailed( long endTime, String failedMsg, AD_Type adType);`
 
 * **广告加载完成**
-
 `void onAdLoaded( long time, AD_Type adType);`
 
 * **广告被点击了**
-
 `void onAdClicked( long time, AD_Type adType);`
 
 * **广告被关闭了(*popcallback无此接口*)**
-
 `void onAdClose(long time, AD_Type adType);`
 	
 * **广告播放完成(*popcallback/splashcallback无此接口*)**   
-
 `void onAdFinish( long time, AD_Type adType);`
 
 * **广告激励有效(*popcallback/splashcallback无此接口*)**
-
 `void onAdExpose( long time, AD_Type adType);`
    
    
