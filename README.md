@@ -16,10 +16,10 @@
 
 ## 2.基本回调：(SplashCallAdShow/PopCallAdShow/VideoCallAdShow)
 
-    开始请求（暴露实现接口）
-    void onAdStartRequest( long startTime, AD_Type adType);
+   	开始请求（暴露实现接口）
+   	void onAdStartRequest( long startTime, AD_Type adType);
 	
-    请求失败（暴露实现接口）
+  	请求失败（暴露实现接口）
 	void onAdFailed( long endTime, String failedMsg, AD_Type adType);
 
 	广告加载完成（暴露实现接口）
@@ -29,12 +29,10 @@
 	void onAdClicked( long time, AD_Type adType);
 
 	广告被关闭了(暴露实现接口)*popcallback无此接口*
-
-   	 void onAdClose(long time, AD_Type adType);
+   	void onAdClose(long time, AD_Type adType);
 	
 	广告播放完成(暴露实现接口)*popcallback/splashcallback无此接口*   
 	void onAdFinish( long time, AD_Type adType);
-
 
 	广告激励有效(暴露实现接口)*popcallback/splashcallback无此接口*
 	void onAdExpose( long time, AD_Type adType);
@@ -47,15 +45,17 @@
 	
 	（2）provider配置：
 		AndroidManifest中添加name为"com.ad.ad_manager.ADProvider"的provider（如下）
-		  <provider
-            android:name="com.ad.ad_manager.ADProvider"
-            android:authorities="${applicationId}.ADProvider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths" />--------------------------//见file_paths文件
-        </provider>
+		
+		<provider
+           	 	android:name="com.ad.ad_manager.ADProvider"
+          	 	android:authorities="${applicationId}.ADProvider"
+           		android:exported="false"
+         		android:grantUriPermissions="true">
+           	 		<meta-data
+              				android:name="android.support.FILE_PROVIDER_PATHS"
+               				android:resource="@xml/file_paths" />--------------------------//见file_paths文件
+     		</provider>
+		
 		xml中添加file_paths文件（如已存在resource配置，可比对内容添加项）
 	
 	（3）so库配置：
