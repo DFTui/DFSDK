@@ -1,4 +1,4 @@
-# AD_ManagerSDK使用说明：（可参考demo项目）
+# DFTui_DFSdk使用说明：（可参考demo项目）
 ## 1. 基本接口：
 * ***接口初始化，初始化后才可正常使用其他接口**
 `AD_Manager.init(Application application);`
