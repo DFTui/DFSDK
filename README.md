@@ -30,7 +30,7 @@
 
 	广告被关闭了(暴露实现接口)*popcallback无此接口*
 
-    void onAdClose(long time, AD_Type adType);
+   	 void onAdClose(long time, AD_Type adType);
 	
 	广告播放完成(暴露实现接口)*popcallback/splashcallback无此接口*   
 	void onAdFinish( long time, AD_Type adType);
